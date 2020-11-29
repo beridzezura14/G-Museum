@@ -1,0 +1,126 @@
+.hero{
+    width: 90%;
+    height: 70%;
+    margin: auto;    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+
+  .mainpic{
+      margin: 0;
+      padding: 0;
+      position: absolute;
+      width: 100%;
+      z-index: -111111;
+      background-position: center;
+
+  }
+  .more{
+      margin-top: 10px;
+      display: flex;
+      justify-content: space-between;
+      font-size: 13px;
+  }
+  .sharemore a:first-child{
+      padding: 0 10px;
+  }
+  .hero-main{
+     /* margin-top: 3rem;*/
+      font-size: 30px;
+  }
+  .twothing{
+      display: flex;
+      flex-direction: column;
+     /* margin-top: 2rem;*/
+      
+  }
+  .twothing a{
+    color: #017698;
+  }
+  .twothing a:first-child{
+      margin-bottom: 0.5rem;
+  }
+
+  .open h3{
+    color: #017698;
+    margin-bottom: 0.5rem;
+  }
+  .visit{
+      margin-top: 4rem;
+      background-color: #017698;
+      padding: 15px 30px;
+      display: inline-block;
+  }
+  .hero-main h1{
+    animation-name: moveInLeft;
+    animation-duration: 1s;
+    animation-timing-function: ease-out;
+  }
+  @keyframes moveInLeft{
+    0% {
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+    /*60%{
+        transform: rotate(120deg) rotate(-50deg);
+    }*/
+    80% {
+        transform: translateX(10px);
+    } 
+    100% {
+        opacity: 1;
+        transform: translate(0);
+    }
+  }
+
+  @media all and (min-width: 700px) {
+    
+  }
+
+
+  
+  @media all and (min-width: 960px) {
+    .hero{
+        max-width: 1000px;
+    }
+    .hero-main{
+        font-size: 35px;
+    }
+    .hero-main h1{
+      animation-name: moveInLeft;
+      animation-duration: 1s;
+      animation-timing-function: ease-out;
+    }
+    @keyframes moveInLeft{
+      0% {
+          opacity: 0;
+          transform: translateX(-100px);
+      }
+      /*60%{
+          transform: rotate(120deg) rotate(-50deg);
+      }*/
+      80% {
+          transform: translateX(10px);
+      } 
+      100% {
+          opacity: 1;
+          transform: translate(0);
+      }
+      
+  }
+    .twothing a:first-child{
+        margin-bottom: 0.5rem;
+    }
+    .visit{
+      margin-top: 4rem;
+      text-align: center;
+      display: block;
+    }
+  }
+  @media all and (min-width: 1560px) {
+    .hero-main{
+        font-size: 35px;
+    }
+
+  }

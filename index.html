@@ -1,98 +1,342 @@
 <!DOCTYPE html>
+<html>
 <head>
-    <meta charset="UTF-8">
+    <title>GEORGIAN MUSEUM</title>
+    <link rel="shortcut icon" href="img/logo.png"> 
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+	<meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="assets/css/style.css">
-    <title>წაიხემსე</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 </head>
 <body>
-    <header>
-        <img src="assets/logo.svg"  alt="logo">
-        <nav>
-            <ul class="header-navigation">
-                <li><a  href="#">პროდუქცია</a></li>
-                <li><a  href="#">კონტაქტი</a></li>
-            </ul>
-        </nav>
-        <div class="burger">
-            <span class="burger__item"></span>
-            <span class="burger__item"></span>
-            <span class="burger__item"></span>
+    
+    <nav class="navbar">
+        <div class="members">
+            <a href="#">members </a>
+            <a href="#">educators</a>
         </div>
-    </header> 
-    <div class="hero">
-        <section class="hero-content">
-            <h1>იტალიური სამზარეულო</h1>
-            <img class="hero_img" src="assets/images/main_pic.png" alt="spaghetti" > 
-            <p>მოგესალმებით იტალიურ სამზარეულოდან ...</p>
-            <a class="more" href="#">ვრცლად</a>
-        </section>
-        <a class="down" href="#">დაუყევი საიტს</a>
-    </div>
-    <section class="menu">
-        <h2 class="menu_title">იტალიური პასტა</h2>
-        <ul class="pastas">
-            <li class="pasta">
-                <img class="lazy" alt="pasta" src="./assets/images/1.png" data-src="./assets/images/1.png">
-                <h3>სპაგეტი ალა მატრიჩიანა</h3>
-                <p>ტომატი,ხახვი,პარმეზანი,ბაზელიკი</p>
-                <a class="add"  href="#">დამატება</a>
+        <ul class="menu">
+            <li class="logo"><a href="#"><img class="logoL" src="img/logo.png" alt="logo"></a></li>
+            <li class="item"><a href="#">Home</a></li>
+            <li class="item"><a href="#">Visit</a></li>
+            <!--
+            <li class="item has-submenu">
+                <a tabindex="0">Services</a>
+                <ul class="submenu">
+                    <li class="subitem"><a href="#">Design</a></li>
+                    <li class="subitem"><a href="#">Development</a></li>
+                    <li class="subitem"><a href="#">SEO</a></li>
+                    <li class="subitem"><a href="#">Copywriting</a></li>
+                </ul>
             </li>
-            <li class="pasta">
-              <img class="lazy" alt="pasta" src="./assets/images/1.png" data-src="./assets/images/2.png">
-              <h3>სპაგეტი ალა მატრიჩიანა</h3>
-              <p>ტომატი,ხახვი,პარმეზანი,ბაზელიკი</p>
-              <a class="add" href="#">დამატება</a>
-          </li>
-          <li class="pasta">
-              <img class="lazy" alt="pasta" src="./assets/images/1.png" data-src="./assets/images/3.png">
-              <h3>სპაგეტი ალა მატრიჩიანა</h3>
-              <p>ტომატი,ხახვი,პარმეზანი,ბაზელიკი</p>
-              <a class="add damatebulia" href="#">დამატებულია</a>
-          </li>
-          <li class="pasta">
-              <img class="lazy" alt="pasta" src="./assets/images/1.png" data-src="./assets/images/4.png">
-              <h3>სპაგეტი ალა მატრიჩიანა</h3>
-              <p>ტომატი,ხახვი,პარმეზანი,ბაზელიკი</p>
-              <a class="add" href="#">დამატება</a>
-          </li>
-          <li class="pasta">
-              <img class="lazy" alt="pasta" src="./assets/images/1.png" data-src="./assets/images/5.png">
-              <h3>სპაგეტი ალა მატრიჩიანა</h3>
-              <p>ტომატი,ხახვი,პარმეზანი,ბაზელიკი</p>
-              <a class="add" href="#">დამატება</a>
-          </li>
-          <li class="pasta">
-              <img class="lazy" alt="pasta" src="/assets/images/1.png" data-src="./assets/images/6.png">
-              <h3>სპაგეტი ალა მატრიჩიანა</h3>
-              <p>ტომატი,ხახვი,პარმეზანი,ბაზელიკი</p>
-              <a class="add" href="#">დამატება</a>
-          </li>
+            <li class="item has-submenu">
+                <a tabindex="0">Plans</a>
+                <ul class="submenu">
+                    <li class="subitem"><a href="#">Freelancer</a></li>
+                    <li class="subitem"><a href="#">Startup</a></li>
+                    <li class="subitem"><a href="#">Enterprise</a></li>
+                </ul>
+            </li>-->
+            <li class="item"><a href="#">Support</a></li>
+            <li class="item tickets"><a class="tickets" href="#">Tickets</a>
+            </li>
+            <li class="toggle"><a href="#"><i class="fas fa-bars"></i></a></li>
         </ul>
-    </section>
-    <footer>
-        <div class="footer-c">
-        <address>მიცკევიჩის#7ა, პირველი სადარბაზო</address>  
-        <a href="tel:00995595494303">(+995)595 494 303</a>
+        <div class="hero">
+            <div class="more">
+                <div class="explore">
+                    <a href="#">explore</a>
+                </div>
+                <div class="sharemore">
+                    <a href="#"><i class="fas fa-share-alt"></i> Share</a>
+                    <a href="#"><i class="fas fa-angle-double-right"></i> more</a>
+                </div>
+            </div>
+            <div class="hero-main">
+                <h1>Explote The <br> Museum</h1>
+            </div>
+            <div class="twothing">
+                <a href="#"><i class="fas fa-angle-right"></i> Whats here</a>
+                <a href="#"><i class="fas fa-angle-right"></i> About us</a>
+            </div>
+            <div class="abouttoopen">
+                <div class="open fade-in"> 
+                <h3><i class="far fa-clock"></i> Museum Open:</h3>
+                <p>from 9:30 - to 19:30</p>
+                </div>
+                <div class="visit">
+                   <a href="#"><h2><i class="far fa-calendar-check"></i> &ensp; Plan Your Visit</h2></a> 
+                </div>
+            </div>
         </div>
-        <div class="map">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2978.6591572740094!2d44.78139741480843!3d41.70629318412839!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40440cd04f0da3f7%3A0x28b3664ea2476d6f!2sVere+Loft!5e0!3m2!1ska!2sge!4v1556097275967!5m2!1ska!2sge" width="1084" height="290" frameborder="0" style="border:0" allowfullscreen></iframe>
+    </nav>
+
+
+    <Section class="section-story">
+        <div class="box">
+            <div class="box__first" data-aos="fade-right">
+                <h3><p>HANDS ON, MINDE BLOWING</p>Exhibits</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                   Aperiam, ipsum sapiente aspernatur.</p>
+                <a href="#"><i class="fas fa-landmark"></i>&ensp; See all exhibits &ensp; <i class="fas fa-chevron-right"></i> </a>
+            </div>
+            
+            <div class="box__description" data-aos="fade-left">
+                <img src="img/1.jpg" alt="1 museum photo">
+                
+                <a href="#"><div><i class="fas fa-landmark"></i>
+                    <h4>Explore</h4>
+                    <h5>Exhibits</h5>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                       Aperiam, ipsum sapiente aspernatur. Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+                </div></a>
+            </div>
+            <div class="box__description" data-aos="fade-left">
+                <img src="img/2.jpg" alt="1 museum photo">
+                
+                <div><i class="fas fa-landmark"></i>
+                    <h4>Explore</h4>
+                    <h5>Exhibits</h5>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                       Aperiam, ipsum sapiente aspernatur. Aperiam, ipsum sapiente aspernatur.</p>
+                </div>
+            </div><!---->
         </div>
-        <div class="icons">
-                <a href="https://smartacademy.ge" target="_blank" class="academy-logo">
-                    <img src="assets/academy-logo.svg"></a>
-            <span class="social">
-                <a href="https://fb.com" target="_blank">
-                    <img src="assets/facebook.svg"> </a>
-                <a href="https://www.instagram.com/" target="_blank" >
-                    <img src="assets/instagram.svg"></a>
-                <a href="https://www.youtube.com/" target="_blank" >
-                    <img src="assets/youtube.svg"></a>
-            </span>
-            <img src="assets/card.svg" alt="">
+    </Section>
+
+    <Section class="section-story second-story">
+        <div class="box">         
+            
+            <div class="box__description" data-aos="fade-right">
+                <img src="img/4.jpg" alt="1 museum photo">
+                
+                <a href="#"><div><i class="fas fa-landmark"></i>
+                    <h4>Explore</h4>
+                    <h5>Exhibits</h5>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                       Aperiam, ipsum sapiente aspernatur. Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+                </div></a>
+            </div>
+            <div class="box__description" data-aos="fade-right">
+                <img src="img/3.jpg" alt="1 museum photo">
+                
+                <div><i class="fas fa-landmark"></i>
+                    <h4>Explore</h4>
+                    <h5>Exhibits</h5>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                       Aperiam, ipsum sapiente aspernatur. Aperiam, ipsum sapiente aspernatur.</p>
+                </div>
+            </div>
+            <div class="box__first" data-aos="fade-left">
+                <h3><p>HANDS ON, MINDE BLOWING</p>Exhibits</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                   Aperiam, ipsum sapiente aspernatur.</p>
+                <a cl href="#"><i class="fas fa-landmark"></i>&ensp; See all exhibits &ensp; <i class="fas fa-chevron-right"></i> </a>
+            </div>
+        </div>
+    </Section><!--
+    <section class="section-news">
+            <div class="news">
+                <div class="news__text" data-aos="zoom-in">
+                    <h4>Image sales</h4>
+                    <p>
+                        Search and buy images from our extensive online collections. 
+                        We have a wide range of image categories including art, 
+                        natural sciences and history.
+                    </p>
+                    <p>
+                        You can purchase quality prints or digital reproductions. 
+                        Our archive images are also available for licensing for commercial use.
+                    </p>
+                    <div class="news__text--btn">
+                        <a href="#">Print Sale</a>
+                        <a href="#">Licence Image</a>
+                    </div>
+                    
+                </div>
+                <div class="news__img">
+                    <img src="img/img1.jpg" class="news__img--first-image" data-aos="zoom-in" alt="firosmani">
+                    <div class="news__img--painter">
+                        Creat (1972)<br>
+                        Niko Firosmani 1862-1918<br>
+                        Georgia
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="news ">
+                
+                <div class="news__img-2">
+                    <img src="img/img2.jpg" class="news__img--second-image" data-aos="zoom-in" alt="firosmani">
+                    <div class="news__img--painter">
+                        Explore (2019)<br>
+                        vami 1562, Georgia
+                    </div>
+                </div>
+                <div class="news__text news__text-2 " data-aos="zoom-in">
+                    <h4>Last Explore</h4>
+                    <p>
+                        Search and buy images from our extensive online collections. 
+                        We have a wide range of image categories including art, 
+                        natural sciences and history.
+                    </p>
+                    <p>
+                        You can purchase quality prints or digital reproductions. 
+                        Our archive images are also available for licensing for commercial use.
+                    </p>
+                    <div class="news__text--btn">
+                        <a href="#">Print Sale</a>
+                        <a href="#">Licence Image</a>
+                    </div>
+                    
+                </div>
+            </div>
+    </section>-->
+    <section class="section-exhibitions">
+        <div class="exhibitions">
+            <div class="exhibitions__head">
+                <h1 class="fade-in">Exhibitions</h1>
+            </div>
+            <div class="exhibitions__exhibit">
+                <li data-aos="fade-right">
+                    <img src="img/1.jpg" alt="">
+                    <h2>Georgian Museum</h2>
+                    <h4>current</h4>
+                    <p>May 19, 2018 – Jun 28, 2018</p>
+                    <a href="#">learn more</a>
+                </li>
+                <li data-aos="fade-right">
+                    <img src="img/2.jpg" alt="">
+                    <h2>Georgian Museum</h2>
+                    <h4>current</h4>
+                    <p>May 19, 2018 – Jun 28, 2018</p>
+                    <a href="#">learn more</a>
+                </li>
+                <li data-aos="fade-left">
+                    <img src="img/3.jpg" alt="">
+                    <h2>Georgian Museum</h2>
+                    <h4>current</h4>
+                    <p>May 19, 2018 – Jun 28, 2018</p>
+                    <a href="#">learn more</a>
+                </li>
+                <li data-aos="fade-left"> 
+                    <img src="img/4.jpg" alt="">
+                    <h2>Georgian Museum</h2>
+                    <h4>current</h4>
+                    <p>May 19, 2018 – Jun 28, 2018</p>
+                    <a href="#">learn more</a>
+                </li>
+            </div>
+        </div>
+    </section>  
+    <section class="section-about">
+        <div class="about fade-in">
+            <div class="about__text">
+                <h5>Exhibition</h5>
+                <h1>About to Georgian Museum</h1>
+                <p>Join Rose Wylie and Melissa Blanchflower, curator of the artist’s 
+                    critically acclaimed solo exhibition at the Serpentine Sackler Gallery in 2018, 
+                    for the finissage of Lolita’s House at the 2.3gallery, London.
+                    Melissa will hold a guided excursion of the exhibition of the astounding new pictorial 
+                    art and paper works by the renowned British artist. “Minority of painters are more arrestingly, 
+                    pleasingly odd,” wrote Michael Glover in The Independent, “this show demonstrates, at a stroke, quite decisively, 
+                    that . . . the future belongs to that 
+                    womankind who have lived long enough to deserve it.”</p>
+                <p>come in </p>
+            </div>
+          <div class="about__img">
+                <img src="img/2.jpg" alt="">
+            </div>
+        </div>
+    </section><!---->
+    <section class="section-exhibitions">
+        <div class="exhibitions">
+            <div class="exhibitions__head">
+                <h1 class="fade-in">Exhibitions Next Week</h1>
+            </div>
+            <div class="exhibitions__exhibit fade-in">
+                <li>
+                    <img src="img/1.jpg" alt="">
+                    <h2>Georgian Museum</h2>
+                    <h4>current</h4>
+                    <p>May 19, 2018 – Jun 28, 2018</p>
+                    <a href="#">learn more</a>
+                </li>
+                <li>
+                    <img src="img/2.jpg" alt="">
+                    <h2>Georgian Museum</h2>
+                    <h4>current</h4>
+                    <p>May 19, 2018 – Jun 28, 2018</p>
+                    <a href="#">learn more</a>
+                </li>
+                <li>
+                    <img src="img/3.jpg" alt="">
+                    <h2>Georgian Museum</h2>
+                    <h4>current</h4>
+                    <p>May 19, 2018 – Jun 28, 2018</p>
+                    <a href="#">learn more</a>
+                </li>
+                <li> 
+                    <img src="img/4.jpg" alt="">
+                    <h2>Georgian Museum</h2>
+                    <h4>current</h4>
+                    <p>May 19, 2018 – Jun 28, 2018</p>
+                    <a href="#">learn more</a>
+                </li>
+            </div>
+        </div>
+    </section> 
+    <footer class="section-footer">
+        <div class="footer">
+            <div>
+                <div class="footer__logo">
+                    <img src="img/logo.png" alt="">
+                </div>
+                <div class="footer__contact">
+                    <a href="#"><i class="fas fa-phone"></i>  032 2 25 26 27</a>
+                    <a href="#"><i class="fas fa-envelope-open-text"></i> Mg@georgian-museum.ge</a>
+                    <a href="#"><i class="fas fa-map-marker-alt"></i>  AgmaSenebeli 7</a>
+                </div>
+            </div>
+            <div class="footer__mini-menu">
+                <ul>
+                    <a href="#"><li> Exhibitions</li></a>
+                    <a href="#"><li> Publications</li></a>
+                    <a href="#"><li> Artists</li></a>
+                </ul>
+                <ul>
+                    <a href="#"><li> Exhibitions</li></a>
+                    <a href="#"><li> Publications</li></a>
+                    <a href="#"><li> Artists</li></a>
+                </ul>
+                <ul>
+                    <a href="#"><li> News</li></a>
+                    
+                </ul>
+            </div>
+            <div class="footer__follow-us">
+                <h1>follow-us</h1>
+                <div class="footer__follow-us--social">
+                    <i class="fab fa-facebook-f"></i>
+                    <i class="fab fa-instagram"></i>
+                    <i class="fab fa-youtube"></i>
+                </div>
+            </div>
         </div>
     </footer>
-<script type="text/javascript" src="assets/js/javascript.js"></script>
+    
+
+
+    <script src="js/script.js"></script>
+    <script src="js/scroll.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    
 </body>
 </html>

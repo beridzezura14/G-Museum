@@ -1,0 +1,154 @@
+.section-story{
+    margin-top: 5.5rem;
+}
+.box{
+        max-width: 90%;
+        margin: 0 auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+
+
+    
+
+        &__first{           
+            height: 15rem;
+            
+            p:first-child{
+                font-size: 10px;
+                margin-bottom: 10px;
+                color: #017698;
+                letter-spacing: 2px;
+            }
+
+            h3{
+                font-size: 30px;
+                color: rgb(41, 41, 41);
+               
+            }
+          
+            p{
+                line-height:25px;
+                color: rgb(77, 77, 77);
+                margin-top: 1rem;
+            }
+            a{
+                margin-top: 2rem;
+                display: inline-block;
+                background-color: #017698;
+                padding: 10px 20px;
+                text-align: center;
+            }
+
+        }
+        &__description{
+            margin-top: 2rem;
+            text-align: center;
+            background-color: #017698;
+
+            img{
+                width: 100%;
+                height: auto;
+            }
+            i{
+                padding: 20px;
+                border-radius: 50%;
+                background-color: #017698;
+                margin-top: -40px;
+                font-size: 25px;
+                color: white;
+            }
+            
+            h4{
+                margin-top: 0.6rem;
+                font-size: 20px;
+            }
+            h5{
+                margin-top: 1rem;
+                font-size: 10px;
+            }
+            p{
+                padding-top: 2rem;
+                line-height: 25px;
+                width: 90%;
+                margin: auto;
+                padding-bottom: 2rem;
+
+            }
+        }
+}
+
+
+
+@media all and (min-width: 900px) {
+    .fade-in{
+        opacity: 0;
+        transition: opacity 500ms ease-in;
+    }
+    .fade-in.appear{
+        opacity: 1;
+    }
+    .section-story{
+        margin-top: 4rem;    
+    }
+    .box{   
+        width: 1050px;     
+        display: flex;
+        
+
+        &__first{
+            width: 20rem;
+
+        }
+
+            p:first-child{
+                padding-top: 3.1rem;
+            }
+            a{
+                margin-top: 2rem;
+                color: white;
+            }
+            
+           
+            
+
+        &__description{
+            margin-top: 2rem;
+            text-align: center;
+            background-color: white;
+
+            img{
+                width: 300px;
+                height: 200px;
+                border-radius: 3px;
+            }
+            .museum{
+                background-color: #cc0000;
+            }
+            div{
+                width: 299.9px;
+                height: 17rem;
+                
+                margin-top: -10px;
+            }
+            h4{
+                color: rgb(41, 41, 41);
+            }
+            h5{
+                color: #017698;
+                letter-spacing: 2px;
+            }
+        
+              
+            p{
+                color: rgb(66, 66, 66);
+            }
+        }
+    }
+}
+.second-story{
+    background-color: #ccc;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+
+}

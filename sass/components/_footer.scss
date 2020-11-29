@@ -1,0 +1,84 @@
+.section-footer{
+    margin-top: 5.5rem;
+    background:  linear-gradient(rgba(20, 37, 56, 0.87), rgba(0, 0, 0, 0.87)), url("../img/4.jpg") center no-repeat;
+    width: 100%;
+    background-size: cover;
+    padding-bottom: 5rem;
+}
+
+.footer{
+   max-width: 85%;
+   margin: auto;
+   display: flex;
+   flex-direction: column;
+  
+
+
+   &__logo{
+      margin: auto;
+      width: 200px;
+   }
+   &__contact{
+       display: flex;
+       flex-direction: column;
+
+       a{
+           padding-bottom: .7rem;
+           
+           i{
+               padding-right: 0.5rem;
+               color: #017698;
+               font-size: 20px;
+           }
+       }
+   }
+   &__mini-menu{
+       display: flex;
+       justify-content: space-between;
+       margin-top: 2rem;      
+       padding-left: 2.2%;
+       
+   }
+   &__follow-us{
+       padding-top: 2rem;
+
+       &--social{
+           margin-top: 0.5rem;
+           i{
+               padding-right: 0.5rem;
+               font-size: 20px;
+           }
+       }
+   }
+}
+
+@media all and (min-width: 1100px) {
+    .footer{
+        max-width: 85%;
+        margin: auto;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-direction: row;
+
+        &__mini-menu{
+            display: flex;
+            margin-top: 3rem;      
+            margin-right: 15rem;
+            
+            ul{               
+                padding-left: 4rem;
+                display: flex;
+                flex-direction: column;        
+                height: 4rem;
+
+                a{
+                    margin-bottom: 1rem;
+                }
+            }
+               
+            
+            
+        }
+    }
+}
